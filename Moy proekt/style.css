@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+.main{
+    width: 40%;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.main::before{
+   position: absolute;
+   content:'';
+   height: 50px;
+   width: 100%;
+   border-radius:20px 20px 0px 0px;
+   background-color: #FFDC40;
+   left: 0;
+   top: 0;
+}
+li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+li span{
+    word-wrap: break-word;
+}
+ul{
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+#sortirovka{
+    width: fit-content;
+    align-self: flex-end;
+}
+#naza{
+    width: 42px;
+    height: 42px;
+    align-self: left;
+    background: #9953F1;
+    border-radius: 71px;
+    border: none;
+    margin-right: 10px;
+    color: white;
+}
+#udalit{
+    width: fit-content;
+    align-self: center;
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.vvod{
+    border-radius: 20px;
+    padding-left: 10px;
+    height: 40px;
+}
+.knopka{
+    background: #833AE0;
+    border-radius: 71px;
+    width: 150px;
+    height: 42px;
+    align-self: center;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+color:white;
+}
+.knopka:hover{
+    transform: scale(105%);
+    transition: 0.1s;  
+}
+
+
+.red{
+    background-color: rebeccapurple;
+}
+.green{
+    background-color: green;
+}
